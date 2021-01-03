@@ -1,0 +1,12 @@
+'''
+basic how to get a bucket
+conn = boto.connect_s3(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
+bucket = conn.get_bucket()
+'''
+
+def get_all_file_names(bucket_base_dir,bucket):
+	bucket_dirs = bucket.list(prefix=bucket_base_dir,delimiter = '/')
+	all_files_list = []
+	for sub_dir in bucket_dirs:
+		all_files_list.append(bucket.list(prefix=bucket_base_dir+"/"+sub_dir))
+	
