@@ -1,0 +1,60 @@
+.file_item {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 60%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.file_type_img {
+  width: 2rem;
+  height: 2rem;
+  margin-inline: 2%;
+}
+
+.file_name {
+  width: 30%;
+  margin-inline: 0.5rem;
+}
+.file_user {
+  width: 20%;
+  margin-inline: 0.5rem;
+}
+.file_date {
+  width: 25%;
+  margin-inline: 0.5rem;
+}
+.delete_btn {
+  width: 2.25rem;
+  height: 2rem;
+  background-size: 100%;
+  background-color: #fff;
+  border-color: #fff;
+  box-sizing: content-box;
+}
+.next_btn {
+  width: 2.25rem;
+  background-color: #fff;
+  border-color: #fff;
+  box-sizing: content-box;
+}
+
+.dummy_btn {
+  width: 3.5rem;
+  height: 3.25rem;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  .file_item {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+}
