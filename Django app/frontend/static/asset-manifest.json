@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/file_manager/static/css/main.e7300d9c.chunk.css",
+    "main.js": "/file_manager/static/js/main.ef1d9110.chunk.js",
+    "main.js.map": "/file_manager/static/js/main.ef1d9110.chunk.js.map",
+    "runtime-main.js": "/file_manager/static/js/runtime-main.96144699.js",
+    "runtime-main.js.map": "/file_manager/static/js/runtime-main.96144699.js.map",
+    "static/js/2.a1d510e7.chunk.js": "/file_manager/static/js/2.a1d510e7.chunk.js",
+    "static/js/2.a1d510e7.chunk.js.map": "/file_manager/static/js/2.a1d510e7.chunk.js.map",
+    "static/js/3.34458d74.chunk.js": "/file_manager/static/js/3.34458d74.chunk.js",
+    "static/js/3.34458d74.chunk.js.map": "/file_manager/static/js/3.34458d74.chunk.js.map",
+    "index.html": "/file_manager/index.html",
+    "static/css/main.e7300d9c.chunk.css.map": "/file_manager/static/css/main.e7300d9c.chunk.css.map",
+    "static/js/2.a1d510e7.chunk.js.LICENSE.txt": "/file_manager/static/js/2.a1d510e7.chunk.js.LICENSE.txt",
+    "static/media/AuthPage.module.css": "/file_manager/static/media/bg-4.ae9a8f9c.jpg",
+    "static/media/logo.3c05188e.png": "/file_manager/static/media/logo.3c05188e.png",
+    "static/media/newfang.37477d54.svg": "/file_manager/static/media/newfang.37477d54.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96144699.js",
+    "static/js/2.a1d510e7.chunk.js",
+    "static/css/main.e7300d9c.chunk.css",
+    "static/js/main.ef1d9110.chunk.js"
+  ]
+}
