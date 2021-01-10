@@ -30,8 +30,9 @@
     <link rel="apple-touch-icon" href="../static/logo192.png" />
     <link rel="manifest" href="../static/manifest.json" />
     <title>File Manager</title>
+    <link href="../static/static/css/2.013892ec.chunk.css" rel="stylesheet" />
     <link
-      href="../static/static/css/main.e7300d9c.chunk.css"
+      href="../static/static/css/main.9d69c294.chunk.css"
       rel="stylesheet"
     />
   </head>
@@ -42,39 +43,39 @@
       !(function (e) {
         function r(r) {
           for (
-            var n, a, i = r[0], c = r[1], l = r[2], s = 0, p = [];
+            var n, u, i = r[0], c = r[1], l = r[2], s = 0, p = [];
             s < i.length;
             s++
           )
-            (a = i[s]),
-              Object.prototype.hasOwnProperty.call(o, a) &&
-                o[a] &&
-                p.push(o[a][0]),
-              (o[a] = 0);
+            (u = i[s]),
+              Object.prototype.hasOwnProperty.call(o, u) &&
+                o[u] &&
+                p.push(o[u][0]),
+              (o[u] = 0);
           for (n in c)
             Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]);
           for (f && f(r); p.length; ) p.shift()();
-          return u.push.apply(u, l || []), t();
+          return a.push.apply(a, l || []), t();
         }
         function t() {
-          for (var e, r = 0; r < u.length; r++) {
-            for (var t = u[r], n = !0, i = 1; i < t.length; i++) {
+          for (var e, r = 0; r < a.length; r++) {
+            for (var t = a[r], n = !0, i = 1; i < t.length; i++) {
               var c = t[i];
               0 !== o[c] && (n = !1);
             }
-            n && (u.splice(r--, 1), (e = a((a.s = t[0]))));
+            n && (a.splice(r--, 1), (e = u((u.s = t[0]))));
           }
           return e;
         }
         var n = {},
           o = { 1: 0 },
-          u = [];
-        function a(r) {
+          a = [];
+        function u(r) {
           if (n[r]) return n[r].exports;
           var t = (n[r] = { i: r, l: !1, exports: {} });
-          return e[r].call(t.exports, t, t.exports, a), (t.l = !0), t.exports;
+          return e[r].call(t.exports, t, t.exports, u), (t.l = !0), t.exports;
         }
-        (a.e = function (e) {
+        (u.e = function (e) {
           var r = [],
             t = o[e];
           if (0 !== t)
@@ -84,75 +85,75 @@
                 t = o[e] = [r, n];
               });
               r.push((t[2] = n));
-              var u,
+              var a,
                 i = document.createElement("script");
               (i.charset = "utf-8"),
                 (i.timeout = 120),
-                a.nc && i.setAttribute("nonce", a.nc),
+                u.nc && i.setAttribute("nonce", u.nc),
                 (i.src = (function (e) {
                   return (
-                    a.p +
+                    u.p +
                     "static/js/" +
                     ({}[e] || e) +
                     "." +
-                    { 3: "34458d74" }[e] +
+                    { 3: "3d1a2a0b" }[e] +
                     ".chunk.js"
                   );
                 })(e));
               var c = new Error();
-              u = function (r) {
+              a = function (r) {
                 (i.onerror = i.onload = null), clearTimeout(l);
                 var t = o[e];
                 if (0 !== t) {
                   if (t) {
                     var n = r && ("load" === r.type ? "missing" : r.type),
-                      u = r && r.target && r.target.src;
+                      a = r && r.target && r.target.src;
                     (c.message =
                       "Loading chunk " +
                       e +
                       " failed.\n(" +
                       n +
                       ": " +
-                      u +
+                      a +
                       ")"),
                       (c.name = "ChunkLoadError"),
                       (c.type = n),
-                      (c.request = u),
+                      (c.request = a),
                       t[1](c);
                   }
                   o[e] = void 0;
                 }
               };
               var l = setTimeout(function () {
-                u({ type: "timeout", target: i });
+                a({ type: "timeout", target: i });
               }, 12e4);
-              (i.onerror = i.onload = u), document.head.appendChild(i);
+              (i.onerror = i.onload = a), document.head.appendChild(i);
             }
           return Promise.all(r);
         }),
-          (a.m = e),
-          (a.c = n),
-          (a.d = function (e, r, t) {
-            a.o(e, r) ||
+          (u.m = e),
+          (u.c = n),
+          (u.d = function (e, r, t) {
+            u.o(e, r) ||
               Object.defineProperty(e, r, { enumerable: !0, get: t });
           }),
-          (a.r = function (e) {
+          (u.r = function (e) {
             "undefined" != typeof Symbol &&
               Symbol.toStringTag &&
               Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
               Object.defineProperty(e, "__esModule", { value: !0 });
           }),
-          (a.t = function (e, r) {
-            if ((1 & r && (e = a(e)), 8 & r)) return e;
+          (u.t = function (e, r) {
+            if ((1 & r && (e = u(e)), 8 & r)) return e;
             if (4 & r && "object" == typeof e && e && e.__esModule) return e;
             var t = Object.create(null);
             if (
-              (a.r(t),
+              (u.r(t),
               Object.defineProperty(t, "default", { enumerable: !0, value: e }),
               2 & r && "string" != typeof e)
             )
               for (var n in e)
-                a.d(
+                u.d(
                   t,
                   n,
                   function (r) {
@@ -161,7 +162,7 @@
                 );
             return t;
           }),
-          (a.n = function (e) {
+          (u.n = function (e) {
             var r =
               e && e.__esModule
                 ? function () {
@@ -170,13 +171,13 @@
                 : function () {
                     return e;
                   };
-            return a.d(r, "a", r), r;
+            return u.d(r, "a", r), r;
           }),
-          (a.o = function (e, r) {
+          (u.o = function (e, r) {
             return Object.prototype.hasOwnProperty.call(e, r);
           }),
-          (a.p = "/file_manager/"),
-          (a.oe = function (e) {
+          (u.p = "../static/"),
+          (u.oe = function (e) {
             throw (console.error(e), e);
           });
         var i = (this.webpackJsonpfile_manager =
@@ -188,7 +189,7 @@
         t();
       })([]);
     </script>
-    <script src="../static/static/js/2.274fdae7.chunk.js"></script>
-    <script src="../static/static/js/main.d57762b3.chunk.js"></script>
+    <script src="../static/static/js/2.a4201d0c.chunk.js"></script>
+    <script src="../static/static/js/main.584db28c.chunk.js"></script>
   </body>
 </html>
