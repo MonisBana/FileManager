@@ -9,10 +9,7 @@ A file manager web app using React as frontend and Django(Django REST Framework)
 
 Access the [demo](http://18.219.77.183:8000) with the following credentials for better view.
 
-```json
+```
 Username: Monis
 Password: abcd@123
 ```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
