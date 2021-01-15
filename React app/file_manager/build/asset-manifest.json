@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/fileManager/static/css/main.7165c987.chunk.css",
-    "main.js": "/fileManager/static/js/main.54d112f2.chunk.js",
-    "main.js.map": "/fileManager/static/js/main.54d112f2.chunk.js.map",
-    "runtime-main.js": "/fileManager/static/js/runtime-main.5c36a4d9.js",
-    "runtime-main.js.map": "/fileManager/static/js/runtime-main.5c36a4d9.js.map",
-    "static/js/2.a1d510e7.chunk.js": "/fileManager/static/js/2.a1d510e7.chunk.js",
-    "static/js/2.a1d510e7.chunk.js.map": "/fileManager/static/js/2.a1d510e7.chunk.js.map",
-    "static/js/3.34458d74.chunk.js": "/fileManager/static/js/3.34458d74.chunk.js",
-    "static/js/3.34458d74.chunk.js.map": "/fileManager/static/js/3.34458d74.chunk.js.map",
-    "index.html": "/fileManager/index.html",
-    "static/css/main.7165c987.chunk.css.map": "/fileManager/static/css/main.7165c987.chunk.css.map",
-    "static/js/2.a1d510e7.chunk.js.LICENSE.txt": "/fileManager/static/js/2.a1d510e7.chunk.js.LICENSE.txt",
-    "static/media/AuthPage.module.css": "/fileManager/static/media/bg-4.ae9a8f9c.jpg",
-    "static/media/logo.3c05188e.png": "/fileManager/static/media/logo.3c05188e.png",
-    "static/media/newfang.37477d54.svg": "/fileManager/static/media/newfang.37477d54.svg"
+    "main.css": "/file_manager/static/css/main.7c411bee.chunk.css",
+    "main.js": "/file_manager/static/js/main.f5c59a57.chunk.js",
+    "main.js.map": "/file_manager/static/js/main.f5c59a57.chunk.js.map",
+    "runtime-main.js": "/file_manager/static/js/runtime-main.baf9598a.js",
+    "runtime-main.js.map": "/file_manager/static/js/runtime-main.baf9598a.js.map",
+    "static/css/2.013892ec.chunk.css": "/file_manager/static/css/2.013892ec.chunk.css",
+    "static/js/2.c8325f2e.chunk.js": "/file_manager/static/js/2.c8325f2e.chunk.js",
+    "static/js/2.c8325f2e.chunk.js.map": "/file_manager/static/js/2.c8325f2e.chunk.js.map",
+    "static/js/3.8aa54aeb.chunk.js": "/file_manager/static/js/3.8aa54aeb.chunk.js",
+    "static/js/3.8aa54aeb.chunk.js.map": "/file_manager/static/js/3.8aa54aeb.chunk.js.map",
+    "index.html": "/file_manager/index.html",
+    "static/css/2.013892ec.chunk.css.map": "/file_manager/static/css/2.013892ec.chunk.css.map",
+    "static/css/main.7c411bee.chunk.css.map": "/file_manager/static/css/main.7c411bee.chunk.css.map",
+    "static/js/2.c8325f2e.chunk.js.LICENSE.txt": "/file_manager/static/js/2.c8325f2e.chunk.js.LICENSE.txt",
+    "static/media/AuthPage.module.css": "/file_manager/static/media/bg-4.ae9a8f9c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5c36a4d9.js",
-    "static/js/2.a1d510e7.chunk.js",
-    "static/css/main.7165c987.chunk.css",
-    "static/js/main.54d112f2.chunk.js"
+    "static/js/runtime-main.baf9598a.js",
+    "static/css/2.013892ec.chunk.css",
+    "static/js/2.c8325f2e.chunk.js",
+    "static/css/main.7c411bee.chunk.css",
+    "static/js/main.f5c59a57.chunk.js"
   ]
 }

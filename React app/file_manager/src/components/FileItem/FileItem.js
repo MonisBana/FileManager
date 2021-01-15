@@ -31,11 +31,7 @@ class FileItem extends Component {
         />
       );
     } else {
-      filetype =
-        process.env.PUBLIC_URL +
-        "/image/" +
-        this.props.file.name.split(".")[1] +
-        ".png";
+      filetype = "/static/image/" + this.props.file.name.split(".")[1] + ".png";
       nextBtn = <div className={classes.dummy_btn}></div>;
     }
 

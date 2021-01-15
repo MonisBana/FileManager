@@ -6,5 +6,3 @@ export const rootReducer = combineReducers({
   auth: authReducer,
   files: fileReducer,
 });
-
-export function* rootSaga() {}

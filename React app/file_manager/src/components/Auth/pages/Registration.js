@@ -3,24 +3,15 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { register } from "../../../redux/actions/auth";
 import classes from "./Registration.module.css";
+import { toast } from "react-toastify";
 
 function Registration(props) {
-  const [loading, setLoading] = useState(false);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmpass, setConfirmpass] = useState("");
 
-  const enableLoading = () => {
-    setLoading(true);
-  };
-
-  const disableLoading = () => {
-    setLoading(false);
-  };
-
   const onSubmit = (event) => {
-    enableLoading();
     event.preventDefault();
     const body = {
       username,
@@ -28,8 +19,15 @@ function Registration(props) {
       password1: password,
       password2: confirmpass,
     };
-    props.register(body).catch(() => {
-      disableLoading();
+    props.register(body);
+    toast.info("Registering new user ...", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
     });
   };
 
@@ -98,7 +96,6 @@ function Registration(props) {
         <div className={classes.submit_div}>
           <button type="submit" className={classes.submit_btn}>
             <span>Submit</span>
-            {loading && <span className={classes.loader}></span>}
           </button>
 
           <Link to="/auth/login">

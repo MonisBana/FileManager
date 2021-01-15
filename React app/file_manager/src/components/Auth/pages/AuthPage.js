@@ -3,9 +3,9 @@ import React from "react";
 import { Link, Switch, Redirect, Route } from "react-router-dom";
 import Login from "./Login";
 import Registration from "./Registration";
-import Logo from "../../../assets/logo.png";
+// import Logo from "/static/image/logo.png";
 import classes from "./AuthPage.module.css";
-import bg from "../../../assets/bg-4.jpg";
+// import bg from "/static/image/bg-4.jpg";
 
 export function AuthPage() {
   return (
@@ -17,14 +17,14 @@ export function AuthPage() {
           <div
             className={classes.login_aside}
             style={{
-              backgroundImage: { bg },
+              backgroundImage: "url('/static/image/bg-4.jpg')",
             }}
           >
             {/*begin: Aside Container*/}
             <div className={classes.aside_container}>
               {/* start:: Aside header */}
               <Link to="/" className={classes.logo}>
-                <img alt="Logo" className={classes.logo_img} src={Logo} />
+                {/* <img alt="Logo" className={classes.logo_img} src={Logo} /> */}
               </Link>
               {/* end:: Aside header */}
 

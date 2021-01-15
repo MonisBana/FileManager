@@ -13,7 +13,7 @@ const fileReducer = (state = {}, action) => {
     case GET_FILES:
       return {
         ...state,
-        ..._.mapKeys(action.payload.results, "id"),
+        ..._.mapKeys(action.payload, "id"),
       };
     case GET_FILE:
     case ADD_FILE:

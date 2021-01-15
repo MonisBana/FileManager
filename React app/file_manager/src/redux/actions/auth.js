@@ -1,6 +1,7 @@
 import axios from "../../axios-base";
 
 import history from "../history";
+import { toast } from "react-toastify";
 
 import {
   USER_LOADING,
@@ -47,11 +48,37 @@ export const register = ({ username, email, password1, password2 }) => async (
 
   try {
     const res = await axios.post("/rest-auth/registration/", body, config);
+    if (res.status === 201) {
+      toast.dismiss();
+      toast.success("Registration Successful", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
     dispatch({
       type: REGISTER_SUCCESS,
       payload: res.data,
     });
-  } catch (err) {
+  } catch (error) {
+    const data = error.response.data;
+    const errorMessage = `${Object.keys(data)[0]}: ${
+      data[Object.keys(data)[0]][0]
+    }`;
+    toast.dismiss();
+    toast.error(errorMessage, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     dispatch({
       type: REGISTER_FAIL,
     });
@@ -73,11 +100,37 @@ export const login = ({ username, password }) => async (dispatch) => {
 
   try {
     const res = await axios.post("/rest-auth/login/", body, config);
+
+    if (res.status === 200) toast.dismiss();
+    toast.success("Login Successful", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data,
     });
-  } catch (err) {
+  } catch (error) {
+    const data = error.response.data;
+    const errorMessage = `${Object.keys(data)[0]}: ${
+      data[Object.keys(data)[0]][0]
+    }`;
+    toast.dismiss();
+    toast.error(errorMessage, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     dispatch({
       type: LOGIN_FAIL,
     });

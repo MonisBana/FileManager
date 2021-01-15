@@ -32,19 +32,12 @@ class MyFiles extends Component {
     };
   }
   componentDidMount() {
-    // this.props.loadUser();
     this.props.getFiles();
   }
   onFileChange = (event) => {
     this.setState({
       selectedFile: event.target.files[0],
     });
-  };
-  FileNameChange = (event) => {
-    this.setState({ newFileName: event.target.value });
-  };
-  onFolderChange = (event) => {
-    this.setState({ newFolderName: event.target.value });
   };
 
   upload() {
@@ -89,15 +82,6 @@ class MyFiles extends Component {
     }
   }
 
-  uploadFolder() {
-    const formData = new FormData();
-
-    this.props
-      .addFile(formData)
-      .then(this.props.getFiles())
-      .then(this.setState({ newFolder: !this.state.newFolder }));
-  }
-
   render() {
     let fileList = null;
     let gridList = null;
@@ -107,11 +91,11 @@ class MyFiles extends Component {
       const navList = [];
       let id, name;
       let parentId = parentFolderId;
-      console.log(parentId);
+
       while (parentId != null) {
         id = this.props.files[parentId].id;
         name = this.props.files[parentId].name;
-        console.log(name);
+
         navList.push({ id, name });
         parentId = this.props.files[parentId].parent_folder;
       }
@@ -129,7 +113,7 @@ class MyFiles extends Component {
       Files = _.sortBy(Files, function (obj) {
         return !obj.folder;
       });
-      console.log(Files);
+
       gridList = Files.map((file, index) => {
         return <GridItem file={file} key={file.id} folderClick={folderClick} />;
       });
@@ -158,26 +142,6 @@ class MyFiles extends Component {
         </div>
       );
     }
-    let folderUpload = null;
-    if (this.state.newFolder) {
-      folderUpload = (
-        <div className={classes.headerRow}>
-          <input
-            type="text"
-            onChange={this.onFolderChange}
-            value={this.state.folderUpload}
-            placeholder="Enter New Folder Name"
-            style={{ marginInline: "0.5rem" }}
-          />
-          <button
-            onClick={this.uploadFolder.bind(this)}
-            className={classes.btn}
-          >
-            Upload
-          </button>
-        </div>
-      );
-    }
     return (
       <div>
         <div className={classes.subHeader}>
@@ -198,8 +162,12 @@ class MyFiles extends Component {
           <div className={classes.navItem}>
             {this.state.navList.map((dict) => {
               return (
-                <p onClick={() => folderClick(dict.id)} key={dict.id}>
-                  - {dict.name} {"  "}
+                <p
+                  onClick={() => folderClick(dict.id)}
+                  key={dict.id}
+                  className={classes.navLinkItem}
+                >
+                  /{dict.name} {"  "}
                 </p>
               );
             })}

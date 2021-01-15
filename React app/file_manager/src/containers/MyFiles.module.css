@@ -244,3 +244,7 @@ input[type="image"]:disabled {
     box-sizing: border-box;
   }
 }
+
+.navLinkItem:hover {
+  color: #3699ff;
+}
